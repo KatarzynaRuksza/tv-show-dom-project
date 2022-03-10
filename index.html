@@ -3,21 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>
+    <title>
       TV Show Project | Katarzyna Ruksza(My GitHub KateRuksza(trainee))
     </title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
     <link href="style.css" rel="stylesheet" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   </head>
 
   <body>
-    <div id="root">
-    </div>
+    <h1>"All Of Your Favorite TV Shows in One Place"</h1>
 
+    <div id="root">
+      <div class="row" id="mainRow">
+        <div class="input-group col" id="selectShowsDiv">
+          <select class="custom-select" id="showsMenu">
+            <option value="">All shows</option>
+          </select>
+          <div class="input-group-append">
+            <label class="input-group-text" id="firstSearch" for="showsMenu"
+              >Select the shows</label
+            >
+          </div>
+        </div>
+
+        <div class="input-group col" id="selectEpisodesDiv">
+          <select class="custom-select" id="selectEpisodes"></select>
+          <div class="input-group-append">
+            <label
+              class="input-group-text"
+              id="secondSearch"
+              for="selectEpisodes"
+              >Select the episodes</label
+            >
+          </div>
+        </div>
+
+        <button
+          id="goBackToTheStart"
+          type="button"
+          class="btn btn-success btn-sm col"
+        >
+          Go to all Shows
+        </button>
+
+        <nav id="searchInputArea" class="navbar col">
+          <form class="form-inline" id="formResults">
+            <input
+              id="inputSearch"
+              class="form-control"
+              type="search"
+              placeholder="Search..."
+              aria-label="Search"
+            />
+            <span class="searchHolder">Matching results</span>
+          </form>
+        </nav>
+      </div>
+
+      <div class="container" id="coverShowContainer">
+        <div id="showDiv" class="row"></div>
+      </div>
+
+      <div class="container" id="coverCardContainer">
+        <div id="episodeDiv" class="row"></div>
+      </div>
+    </div>
     <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
+
     <script src="episodes.js"></script>
 
     <!-- Loads YOUR javascript code -->
+
     <script src="script.js"></script>
+    <script src="shows.js"></script>
   </body>
 </html>
