@@ -1,3 +1,66 @@
-#root {
-  color: red;
+body {
+  background-color: rgb(8, 36, 21);
 }
+
+#mainRow {
+  padding-bottom: 40px;
+}
+
+#root {
+  color: rgba(0, 0, 0, 0.897);
+}
+h1 {
+  background-image: url("./markus-spiske-iar-afB0QQw-unsplash.jpg");
+  background-size: cover;
+  text-align: center;
+  padding: 100px;
+  color: antiquewhite;
+  font-size: 50px;
+}
+
+label {
+  height: 38px;
+}
+
+button {
+  margin-right: 5px;
+  width: 30px;
+  height: 37px;
+}
+.card {
+  margin-right: 0px;
+  background-color: rgb(15, 14, 14);
+  color: antiquewhite;
+}
+
+#cardImg {
+  width: 100%;
+  height: 320px;
+}
+#showCard {
+  margin-right: 15px;
+}
+#selectShowsDiv {
+  margin-left: 20px;
+  margin-right: 5px;
+  padding: 0px;
+}
+#selectEpisodesDiv {
+  margin-left: 0px;
+  padding: 0px;
+  margin-right: 10px;
+}
+#searchInputArea {
+  padding: 0px;
+  background-color: rgb(8, 36, 21);
+}
+#formResults {
+  background-color: rgb(8, 36, 21);
+  font-weight: 500;
+  font-size: 20px;
+  color: antiquewhite;
+}
+#episodeDiv {
+  margin-left: 60px;
+}
+
